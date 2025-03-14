@@ -35,6 +35,7 @@ def update_product():
         dbm.createNewProduct(product_data)
         return "New entry in DB created",200
     else: return "Name already in DB" ,400
+
 @app.route('/productPicture/<int:ID>',methods =['GET'])
 def get_picture_of_product(ID):
     

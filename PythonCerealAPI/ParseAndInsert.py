@@ -1,16 +1,14 @@
 from Models.CerealProduct import CerealProduct
 import mysql.connector # type: ignore
 
-# Instantiate connector.
+#This file is run on its own if the database needs the data from Cereal.csv again
+
 connector = mysql.connector.connect(
     host = "localhost",
     user = "root",
     password = "250909"
 )
-# Set database.
 connector.database = "cereal_database"
-        
-# Open a cursor.
 cursor = connector.cursor(dictionary=True)
 
 

@@ -117,6 +117,7 @@
     <Content Include="Data\Cereal Pictures\Wheaties Honey Gold.jpg" />
     <Content Include="Data\Cereal Pictures\Wheaties.jpg" />
     <Content Include="Data\Cereal.csv" />
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

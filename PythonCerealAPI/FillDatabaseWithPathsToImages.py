@@ -1,15 +1,13 @@
 import mysql.connector # type: ignore
 import os
-# Instantiate connector.
+
+#This file is run strictly to assoicate the pictures to the corresponding cereal product in Cereal.csv
 connector = mysql.connector.connect(
     host = "localhost",
     user = "root",
     password = "250909"
 )
-# Set database.
 connector.database = "cereal_database"
-        
-# Open a cursor.
 cursor = connector.cursor(dictionary=True)
 pathToPictures = os.path.join("Data", "Cereal Pictures\\")
 

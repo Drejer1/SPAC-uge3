@@ -7,6 +7,7 @@ class DBmanager():
             cls._instance = super(DBmanager, cls).__new__(cls, *args, **kwargs)
             cls._instance._initialized = False
         return cls._instance
+
     def __init__(self):
         if self._initialized:
             return
@@ -20,8 +21,10 @@ class DBmanager():
             user = "root",
             password = "250909"
         )
+
     def _get_cursor(self):
         return self.connection.cursor(dictionary=True)
+
     def get_check_exists(self,ID:int):
         cursor = self._get_cursor()
         cursor.execute(f'SELECT * FROM cereal_database.cereal_product WHERE ID ={ID};')
@@ -53,11 +56,13 @@ class DBmanager():
         result = cursor.fetchall()
         cursor.close()
         return result
+
     def deleteProductByID(self, ID):
         cursor = self._get_cursor()
         query = f"DELETE FROM cereal_database.cereal_product WHERE ID = {ID}"
         cursor.execute(query)
         self.connection.commit()
+
     def createNewProduct(self, product_data: dict):
         cursor = self._get_cursor()
         query = f"""
@@ -68,6 +73,7 @@ class DBmanager():
         cursor.execute(query)
         self.connection.commit()
         cursor.close()
+
     def updateProduct(self,product_data):
         cursor = self._get_cursor()
         query = "UPDATE cereal_database.cereal_product SET "
@@ -88,6 +94,7 @@ class DBmanager():
         result = cursor.fetchall()
         cursor.close()
         return not bool(result)
+
     def get_path(self,ID):
         cursor = self._get_cursor()
         cursor.execute(f"SELECT pathToPicture FROM cereal_database.cereal_product WHERE ID = {ID}")

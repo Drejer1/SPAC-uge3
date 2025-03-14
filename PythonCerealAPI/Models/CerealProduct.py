@@ -1,3 +1,6 @@
+
+#Class for the cereal product was created incase it was ever to be used
+#However it is only used in ParseAndInsert.py currently
 class CerealProduct:
     def __init__(self, name:str, mfr:str, _type:str, calories:int, protein:int, fat:int, sodium:int, fiber:float, carbo:float, sugars:int, potass:int, vitamins:int, shelf:int, weight:float, cups:float, rating:float):
         self.name = name
