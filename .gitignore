@@ -70,6 +70,8 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+.vs/
+.vs/*
 
 # PyBuilder
 .pybuilder/
@@ -158,3 +160,8 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+/PythonCerealAPI/.vs
+PythonCerealAPI/.vs/PythonCerealAPI/v17/.suo
+PythonCerealAPI/.vs/PythonCerealAPI/FileContentIndex/cdb1ec34-d43d-470c-b83f-d8788e6a42aa.vsidx
+PythonCerealAPI/.vs/PythonCerealAPI/v17/.suo
+PythonCerealAPI/.vs/PythonCerealAPI/v17/DocumentLayout.backup.json
