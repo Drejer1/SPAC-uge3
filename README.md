@@ -13,9 +13,11 @@ This project is designed to manage a ceral product database, including storing p
 
 - Connect to a MySQL database
 - Fetch cereal product data
+- Fetch cereal product data according to filters
 - Fetch image related to cereal ID
-
-
+- Post new cereals to the database
+- Edit existing cereal information.
+- Delete cereals from the database.
 
 ## Installation
 
