@@ -45,3 +45,7 @@ This project is designed to manage a ceral product database, including storing p
 Simply run PythonCerealAPI.py. 
 
 Inside Miscellaneous folder there is a postman collection which can be used to test the functionality
+
+## Feedback wanted on
+* This Readme
+*  Does DBmanager make sense 
